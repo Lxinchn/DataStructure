@@ -15,6 +15,9 @@
 		D8E1014A231F91050000B77A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10149231F91050000B77A /* main.m */; };
 		D8E10154231F91050000B77A /* DataStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10153231F91050000B77A /* DataStructureTests.m */; };
 		D8E1015F231F91050000B77A /* DataStructureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1015E231F91050000B77A /* DataStructureUITests.m */; };
+		D8E1016F231F91710000B77A /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1016E231F91710000B77A /* LinkedList.m */; };
+		D8E10172231F91990000B77A /* LinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10171231F91990000B77A /* LinkedNode.m */; };
+		D8E10178231FAA320000B77A /* LinkedListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10177231FAA320000B77A /* LinkedListTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		D8E1015A231F91050000B77A /* DataStructureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E1015E231F91050000B77A /* DataStructureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructureUITests.m; sourceTree = "<group>"; };
 		D8E10160231F91050000B77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E1016D231F91710000B77A /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		D8E1016E231F91710000B77A /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		D8E10170231F91990000B77A /* LinkedNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedNode.h; sourceTree = "<group>"; };
+		D8E10171231F91990000B77A /* LinkedNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedNode.m; sourceTree = "<group>"; };
+		D8E10177231FAA320000B77A /* LinkedListTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		D8E10139231F91040000B77A /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				D8E1016C231F91540000B77A /* LinkedList */,
 				D8E1013A231F91040000B77A /* AppDelegate.h */,
 				D8E1013B231F91040000B77A /* AppDelegate.m */,
 				D8E1013D231F91040000B77A /* ViewController.h */,
@@ -117,6 +126,7 @@
 		D8E10152231F91050000B77A /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				D8E10177231FAA320000B77A /* LinkedListTest.m */,
 				D8E10153231F91050000B77A /* DataStructureTests.m */,
 				D8E10155231F91050000B77A /* Info.plist */,
 			);
@@ -130,6 +140,17 @@
 				D8E10160231F91050000B77A /* Info.plist */,
 			);
 			path = DataStructureUITests;
+			sourceTree = "<group>";
+		};
+		D8E1016C231F91540000B77A /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				D8E1016D231F91710000B77A /* LinkedList.h */,
+				D8E1016E231F91710000B77A /* LinkedList.m */,
+				D8E10170231F91990000B77A /* LinkedNode.h */,
+				D8E10171231F91990000B77A /* LinkedNode.m */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +285,8 @@
 			files = (
 				D8E1013F231F91040000B77A /* ViewController.m in Sources */,
 				D8E1014A231F91050000B77A /* main.m in Sources */,
+				D8E1016F231F91710000B77A /* LinkedList.m in Sources */,
+				D8E10172231F91990000B77A /* LinkedNode.m in Sources */,
 				D8E1013C231F91040000B77A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E10178231FAA320000B77A /* LinkedListTest.m in Sources */,
 				D8E10154231F91050000B77A /* DataStructureTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
