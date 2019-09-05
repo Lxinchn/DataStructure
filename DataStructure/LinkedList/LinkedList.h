@@ -13,8 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LinkedList : NSObject
 
+/** head */
 @property (nonatomic, strong, readonly) LinkedNode *head;
 
+/**
+ 创建
+ */
 - (instancetype)initWithHead:(LinkedNode *)head;
 
 /**

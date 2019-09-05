@@ -16,6 +16,8 @@
 
 @implementation LinkedList
 
+#pragma mark - Create
+
 - (instancetype)initWithHead:(LinkedNode *)head {
     self = [super init];
     if (self) {
