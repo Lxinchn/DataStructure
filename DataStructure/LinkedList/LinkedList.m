@@ -11,6 +11,7 @@
 @interface LinkedList ()
 
 @property (nonatomic, strong, readwrite) LinkedNode *head;
+@property (nonatomic, strong, readwrite) LinkedNode *trail;
 
 @end
 
@@ -22,8 +23,25 @@
     self = [super init];
     if (self) {
         _head = head;
+        _trail = head;
     }
     return self;
+}
+
+- (instancetype)initWithValue:(int)value {
+    self = [super init];
+    if (self) {
+        LinkedNode *node = [LinkedNode nodeWithValue:value];
+        _head = node;
+        _trail = node;
+    }
+    return self;
+}
+
+- (void)addNodeWithValue:(int)value {
+    LinkedNode *node = [LinkedNode nodeWithValue:value];
+    _trail.next = node;
+    _trail = _trail.next;
 }
 
 #pragma mark - Find
@@ -105,6 +123,57 @@
         current = current.next;
     }
     current.next = nil;
+}
+
+#pragma mark - 链表Function
+
+- (LinkedNode *)reverseSingleLinkedList {
+    LinkedNode *prevNode, *currentNode, *reverseNode;
+    currentNode = _head;
+    while (currentNode) {
+        LinkedNode *nextNode = currentNode.next;
+        if (nextNode == nil) {
+            reverseNode = currentNode;
+        }
+        currentNode.next = prevNode;
+        prevNode = currentNode;
+        currentNode = nextNode;
+    }
+    return reverseNode;
+}
+
+- (BOOL)checkCircle {
+    if (_head == nil) return NO;
+    LinkedNode *fastNode = _head.next;
+    LinkedNode *slowNode = _head;
+    while (fastNode != nil && fastNode.next != nil) {
+        fastNode = fastNode.next.next;
+        slowNode = slowNode.next;
+        if (fastNode == slowNode) return YES;
+    }
+    return NO;
+}
+
+- (LinkedNode *)mergeSortLists:(LinkedNode *)bNode {
+    LinkedNode *aNode = _head;
+    // 利用哨兵结点简化实现难度
+    LinkedNode *newNode = [LinkedNode nodeWithValue:0];
+    LinkedNode *current = newNode;
+    while (aNode != nil && bNode != nil) {
+        int aValue = aNode.value;
+        int bValue = bNode.value;
+        if (aValue <= bValue) {
+            current.next = aNode;
+            aNode = aNode.next;
+        } else {
+            current.next = bNode;
+            bNode = bNode.next;
+        }
+        current = current.next;
+    }
+    if (aNode != nil) current.next = aNode;
+    if (bNode != nil) current.next = bNode;
+    return newNode.next;
 }
 
 @end

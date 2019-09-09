@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
  创建
  */
 - (instancetype)initWithHead:(LinkedNode *)head;
+- (instancetype)initWithValue:(int)value;
+- (void)addNodeWithValue:(int)value;
 
 /**
  查询
@@ -42,6 +44,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)deleteNodeWithValue:(int)value;
 - (void)deleteNode:(nonnull LinkedNode *)node;
+
+/**
+ 单链表翻转
+ */
+- (LinkedNode *)reverseSingleLinkedList;
+/**
+ 环检测
+ */
+- (BOOL)checkCircle;
+
+/**
+ 两个有序链表合并
+ */
+- (LinkedNode *)mergeSortLists:(LinkedNode *)bNode;
 
 @end
 
