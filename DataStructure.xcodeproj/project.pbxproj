@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D8811BA423261E1700F44574 /* ArrayStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8811BA323261E1700F44574 /* ArrayStack.m */; };
 		D8811BA72326237500F44574 /* LinkedStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8811BA62326237500F44574 /* LinkedStack.m */; };
+		D8E035C12327852D00BD2829 /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E035C02327852D00BD2829 /* Sort.m */; };
 		D8E1013C231F91040000B77A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1013B231F91040000B77A /* AppDelegate.m */; };
 		D8E1013F231F91040000B77A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1013E231F91040000B77A /* ViewController.m */; };
 		D8E10142231F91040000B77A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E10140231F91040000B77A /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		D8811BA323261E1700F44574 /* ArrayStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayStack.m; sourceTree = "<group>"; };
 		D8811BA52326237500F44574 /* LinkedStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedStack.h; sourceTree = "<group>"; };
 		D8811BA62326237500F44574 /* LinkedStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedStack.m; sourceTree = "<group>"; };
+		D8E035BF2327852D00BD2829 /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		D8E035C02327852D00BD2829 /* Sort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
 		D8E10137231F91040000B77A /* DataStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E1013A231F91040000B77A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E1013B231F91040000B77A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +115,15 @@
 			path = Node;
 			sourceTree = "<group>";
 		};
+		D8E035BE2327850100BD2829 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				D8E035BF2327852D00BD2829 /* Sort.h */,
+				D8E035C02327852D00BD2829 /* Sort.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		D8E1012E231F91040000B77A = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 				D8811BA82326257100F44574 /* Node */,
 				D8E1016C231F91540000B77A /* LinkedList */,
 				D8811BA123261DF200F44574 /* Stack */,
+				D8E035BE2327850100BD2829 /* Sort */,
 				D8E1013A231F91040000B77A /* AppDelegate.h */,
 				D8E1013B231F91040000B77A /* AppDelegate.m */,
 				D8E1013D231F91040000B77A /* ViewController.h */,
@@ -310,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8811BA72326237500F44574 /* LinkedStack.m in Sources */,
+				D8E035C12327852D00BD2829 /* Sort.m in Sources */,
 				D8E1013F231F91040000B77A /* ViewController.m in Sources */,
 				D8E1014A231F91050000B77A /* main.m in Sources */,
 				D8811BA423261E1700F44574 /* ArrayStack.m in Sources */,
