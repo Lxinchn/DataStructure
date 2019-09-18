@@ -21,6 +21,7 @@
 		D8E1016F231F91710000B77A /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1016E231F91710000B77A /* LinkedList.m */; };
 		D8E10172231F91990000B77A /* LinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10171231F91990000B77A /* LinkedNode.m */; };
 		D8E10178231FAA320000B77A /* LinkedListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E10177231FAA320000B77A /* LinkedListTest.m */; };
+		E97DC07D233258B1007394C3 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = E97DC07C233258B1007394C3 /* BinarySearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		D8E10170231F91990000B77A /* LinkedNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedNode.h; sourceTree = "<group>"; };
 		D8E10171231F91990000B77A /* LinkedNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedNode.m; sourceTree = "<group>"; };
 		D8E10177231FAA320000B77A /* LinkedListTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListTest.m; sourceTree = "<group>"; };
+		E97DC07B233258B1007394C3 /* BinarySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		E97DC07C233258B1007394C3 /* BinarySearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 		D8E10139231F91040000B77A /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				E97DC07A23325895007394C3 /* BinarySearch */,
 				D8811BA82326257100F44574 /* Node */,
 				D8E1016C231F91540000B77A /* LinkedList */,
 				D8811BA123261DF200F44574 /* Stack */,
@@ -190,6 +194,15 @@
 				D8E1016E231F91710000B77A /* LinkedList.m */,
 			);
 			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		E97DC07A23325895007394C3 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				E97DC07B233258B1007394C3 /* BinarySearch.h */,
+				E97DC07C233258B1007394C3 /* BinarySearch.m */,
+			);
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +342,7 @@
 				D8811BA423261E1700F44574 /* ArrayStack.m in Sources */,
 				D8E1016F231F91710000B77A /* LinkedList.m in Sources */,
 				D8E10172231F91990000B77A /* LinkedNode.m in Sources */,
+				E97DC07D233258B1007394C3 /* BinarySearch.m in Sources */,
 				D8E1013C231F91040000B77A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
