@@ -48,6 +48,7 @@
         return NO;
     }
     [_array addObject:obj];
+    _count ++;
     return YES;
 }
 
@@ -56,8 +57,8 @@
         return nil;
     }
     id obj = _array[_count - 1];
-    _count--;
     [_array removeLastObject];
+    _count--;
     return obj;
 }
 
