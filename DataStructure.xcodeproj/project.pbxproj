@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87F484D23852CD700080610 /* ArrayQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D87F484C23852CD700080610 /* ArrayQueue.m */; };
+		D87F48502385361600080610 /* LinkedQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D87F484F2385361600080610 /* LinkedQueue.m */; };
 		D8811BA423261E1700F44574 /* ArrayStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8811BA323261E1700F44574 /* ArrayStack.m */; };
 		D8811BA72326237500F44574 /* LinkedStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8811BA62326237500F44574 /* LinkedStack.m */; };
 		D8E035C12327852D00BD2829 /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E035C02327852D00BD2829 /* Sort.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D87F484B23852CD700080610 /* ArrayQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayQueue.h; sourceTree = "<group>"; };
+		D87F484C23852CD700080610 /* ArrayQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayQueue.m; sourceTree = "<group>"; };
+		D87F484E2385361600080610 /* LinkedQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedQueue.h; sourceTree = "<group>"; };
+		D87F484F2385361600080610 /* LinkedQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedQueue.m; sourceTree = "<group>"; };
 		D8811BA223261E1700F44574 /* ArrayStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayStack.h; sourceTree = "<group>"; };
 		D8811BA323261E1700F44574 /* ArrayStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayStack.m; sourceTree = "<group>"; };
 		D8811BA52326237500F44574 /* LinkedStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedStack.h; sourceTree = "<group>"; };
@@ -98,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D87F484A23852CA800080610 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				D87F484B23852CD700080610 /* ArrayQueue.h */,
+				D87F484C23852CD700080610 /* ArrayQueue.m */,
+				D87F484E2385361600080610 /* LinkedQueue.h */,
+				D87F484F2385361600080610 /* LinkedQueue.m */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		D8811BA123261DF200F44574 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +171,7 @@
 				D8811BA82326257100F44574 /* Node */,
 				D8E1016C231F91540000B77A /* LinkedList */,
 				D8811BA123261DF200F44574 /* Stack */,
+				D87F484A23852CA800080610 /* Queue */,
 				D8E035BE2327850100BD2829 /* Sort */,
 				D8E1013A231F91040000B77A /* AppDelegate.h */,
 				D8E1013B231F91040000B77A /* AppDelegate.m */,
@@ -340,8 +358,10 @@
 				D8E1013F231F91040000B77A /* ViewController.m in Sources */,
 				D8E1014A231F91050000B77A /* main.m in Sources */,
 				D8811BA423261E1700F44574 /* ArrayStack.m in Sources */,
+				D87F48502385361600080610 /* LinkedQueue.m in Sources */,
 				D8E1016F231F91710000B77A /* LinkedList.m in Sources */,
 				D8E10172231F91990000B77A /* LinkedNode.m in Sources */,
+				D87F484D23852CD700080610 /* ArrayQueue.m in Sources */,
 				E97DC07D233258B1007394C3 /* BinarySearch.m in Sources */,
 				D8E1013C231F91040000B77A /* AppDelegate.m in Sources */,
 			);
